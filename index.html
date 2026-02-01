@@ -105,7 +105,7 @@
                 </div>
                 <div class="mockup-visual">
                     <div class="phone-frame">
-                        <img src="line_mockup_balloon_vip_1767106780621.png" alt="LINE操作モックアップ" class="featured-img">
+                        <img src="line_mockup_vertical.png" alt="LINE操作モックアップ" class="featured-img">
                     </div>
                 </div>
             </div>
@@ -362,7 +362,8 @@
                     </div>
                     <div class="faq-item card">
                         <h4 class="faq-question">Q. 発送枠を使い切れなかった場合はどうなりますか？</h4>
-                        <p class="faq-answer">A. 未使用の発送枠は無期限で翌月以降に繰り越されます。使わなかった月も無駄にはなりません。</p>
+                        <p class="faq-answer">A. 未使用の発送枠は無期限で翌月以降に繰り越されます。使わなかった月も無駄にはなりません。<br>（※スタンダードプランのみ繰り越し12ヶ月まで）
+                        </p>
                     </div>
                     <div class="faq-item card">
                         <h4 class="faq-question">Q. 最低契約期間はありますか？</h4>
@@ -372,6 +373,62 @@
                         <h4 class="faq-question">Q. 送料はかかりますか？</h4>
                         <p class="faq-answer">A. 1都7県（関東甲信）は送料込みです。その他の地域は一律2,000円の送料がかかります。</p>
                     </div>
+                    <div class="faq-item card">
+                        <h4 class="faq-question">Q. すでに枠を使い切っている場合でも、追加で発送してもらえますか？</h4>
+                        <p class="faq-answer">A.
+                            可能です。<br>追加発送は、1件あたり12,000円（税込）で承っております。<br>※基本地域の送料込み。それ以外の地域は別途送料を頂戴します。</p>
+                    </div>
+                    <div class="faq-item card">
+                        <h4 class="faq-question">Q. ギフトだけでなく、もっと豪華な装飾も相談できますか？</h4>
+                        <p class="faq-answer">A.
+                            可能です。<br>ご希望をヒアリングのうえ、最適な装飾プランをご提案いたします。<br>その際は、メンバーシップ価格にてご案内させていただきます。</p>
+                    </div>
+                    <div class="faq-item card">
+                        <h4 class="faq-question">Q. バルーンに名前やメッセージを入れることはできますか？</h4>
+                        <p class="faq-answer">A.
+                            可能です。<br>お名前やメッセージの印字は基本料金に含まれております。（ロゴ入れ希望などございましたらその都度ご相談ください）<br>ご指示がない場合は、一番大きなメインバルーンに「お相手のお名前」や「ご希望のメッセージ」を、一つ下のバルーンに「送り主様のお名前または会社名」などをお入れすることをお勧めしております。<br>その他ご希望がある場合は、お気軽にご相談ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第13セクション：Contact Form -->
+        <section id="contact" class="py-large">
+            <div class="container">
+                <h2 class="serif text-center mb-large">お問い合わせ</h2>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="plan">ご希望のプラン</label>
+                            <select id="plan" name="plan">
+                                <option value="">選択してください</option>
+                                <option value="standard">スタンダード（¥9,800/月）</option>
+                                <option value="business">ビジネス（¥29,800/月）</option>
+                                <option value="enterprise">エンタープライズ（¥49,800~/月）</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="ご質問やご要望をお聞かせください"></textarea>
+                        </div>
+                        <div class="form-submit text-center">
+                            <button type="submit" class="btn btn-gold btn-large">送信する</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -398,6 +455,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
 
