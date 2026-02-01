@@ -711,24 +711,27 @@ section p {
 
 /* ========== GALLERY ========== */
 .gallery-card {
-    padding: 20px;
+    padding: 25px 25px 10px 25px;
     text-align: center;
     background: var(--white);
     border-radius: 15px;
 }
 
 .gallery-card img {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .gallery-card h4 {
     color: var(--primary-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .gallery-card .small {
     font-size: 0.85rem;
     color: var(--text-light);
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /* ========== CTA SECTION ========== */
